@@ -96,6 +96,7 @@
             this.txtsifre.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtsifre.Location = new System.Drawing.Point(44, 146);
             this.txtsifre.Name = "txtsifre";
+            this.txtsifre.PasswordChar = '•';
             this.txtsifre.Size = new System.Drawing.Size(164, 30);
             this.txtsifre.TabIndex = 5;
             // 
@@ -104,8 +105,10 @@
             this.txtsifretekrar.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtsifretekrar.Location = new System.Drawing.Point(44, 218);
             this.txtsifretekrar.Name = "txtsifretekrar";
+            this.txtsifretekrar.PasswordChar = '•';
             this.txtsifretekrar.Size = new System.Drawing.Size(164, 30);
             this.txtsifretekrar.TabIndex = 6;
+            this.txtsifretekrar.TextChanged += new System.EventHandler(this.txtsifretekrar_TextChanged);
             // 
             // checkboxsifregoster
             // 
@@ -119,6 +122,7 @@
             this.checkboxsifregoster.TabIndex = 7;
             this.checkboxsifregoster.Text = "Şifreyi Göster";
             this.checkboxsifregoster.UseVisualStyleBackColor = true;
+            this.checkboxsifregoster.CheckedChanged += new System.EventHandler(this.checkboxsifregoster_CheckedChanged);
             // 
             // btnkayitol
             // 
@@ -134,6 +138,7 @@
             this.btnkayitol.TabIndex = 8;
             this.btnkayitol.Text = "KAYIT OL";
             this.btnkayitol.UseVisualStyleBackColor = false;
+            this.btnkayitol.Click += new System.EventHandler(this.btnkayitol_Click);
             // 
             // button1
             // 
@@ -148,6 +153,7 @@
             this.button1.TabIndex = 9;
             this.button1.Text = "TEMİZLE";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label5
             // 
@@ -170,6 +176,7 @@
             this.label6.Size = new System.Drawing.Size(222, 25);
             this.label6.TabIndex = 11;
             this.label6.Text = "Giriş Yapma Ekranına Git";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // frmRegister
             // 
@@ -195,6 +202,7 @@
             this.Name = "frmRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.frmRegister_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -51,6 +51,7 @@
             this.label6.Size = new System.Drawing.Size(135, 25);
             this.label6.TabIndex = 23;
             this.label6.Text = "Hesap Oluştur";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -75,6 +76,7 @@
             this.button1.TabIndex = 21;
             this.button1.Text = "TEMİZLE";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnkayitol
             // 
@@ -90,6 +92,7 @@
             this.btnkayitol.TabIndex = 20;
             this.btnkayitol.Text = "GİRİŞ YAP";
             this.btnkayitol.UseVisualStyleBackColor = false;
+            this.btnkayitol.Click += new System.EventHandler(this.btnkayitol_Click);
             // 
             // checkboxsifregoster
             // 
@@ -103,14 +106,17 @@
             this.checkboxsifregoster.TabIndex = 19;
             this.checkboxsifregoster.Text = "Şifreyi Göster";
             this.checkboxsifregoster.UseVisualStyleBackColor = true;
+            this.checkboxsifregoster.CheckedChanged += new System.EventHandler(this.checkboxsifregoster_CheckedChanged);
             // 
             // txtsifre
             // 
             this.txtsifre.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtsifre.Location = new System.Drawing.Point(79, 172);
             this.txtsifre.Name = "txtsifre";
+            this.txtsifre.PasswordChar = '•';
             this.txtsifre.Size = new System.Drawing.Size(164, 30);
             this.txtsifre.TabIndex = 17;
+            this.txtsifre.TextChanged += new System.EventHandler(this.txtsifre_TextChanged);
             // 
             // txtisim
             // 
@@ -170,10 +176,11 @@
             this.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.DimGray;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
